@@ -1,0 +1,97 @@
+/*
+Theme Name: Starkers HTML5
+Theme URI: http://nathanstaines.com
+Description: An HTML5 version of <a href="http://elliotjaystocks.com/starkers/">Starkers</a> by <a href="http://elliotjaystocks.com/">Elliot Jay Stocks</a> which is based on Twenty Ten.
+Version: 3.2
+Author: Nathan Staines
+Author URI: http://nathanstaines.com
+Tags: starkers, html5, naked, clean, basic
+*/
+
+@import "css/reset.css";
+@import "css/layout.css";
+
+/* Low resolution, 480px and below*/
+@media only screen and (max-width: 480px) { 
+	p{ color: rgb(0,0,0); }
+	body{background:rgb(244,244,244);}
+	#master{ width:95%; margin:0 auto; border: 1px solid rgb(193,180,152); background:rgb(255,255,255);}
+	header{height:130px; background: url(http://localhost:8888/wordpress/images/HeaderBG.jpg);}
+	nav{height:100%; background:rgb(0,0,0); text-align: center; padding: 10px 5px 0 5px; margin-bottom: 10px; font-size: 120%; line-height: 160%;}
+	nav li{display:inline; margin-left: 10px;}
+	nav li a{color: rgb(255,255,255); text-decoration: none;}
+
+	#slideshow{display:none;}
+	.contentbox{background: rgb(200,200,200); float:left; border-top: 1px solid rgb(193,180,152); border-bottom: 1px solid rgb(193,180,152);
+		margin-bottom: 10px; padding:10px;}
+		.contentbox p{font-family: verdana; font-size: 80%; line-height: 150%;}
+	article{width:95%; margin-left: 10px;}
+	.post{margin-bottom: 20px;}
+	.post h2{font-weight: bold; font-size: 120%; margin-bottom: 5px;}
+	.post h2 a{color:rgb(180,30,44); text-decoration: none;}
+	.post p{line-height: 160%;}
+	.meta {font-size: 70%; margin-top: 5px; padding-bottom: 15px; float:right; font-family: verdana;}
+	.meta a{color:rgb(189,30,44);}
+	footer{padding-top: 10px;}
+	footer nav{margin-bottom: 0px; padding-bottom: 10px; }
+}
+
+
+/* Med resolution, 480px to 1023px*/
+@media only screen and (min-width: 481px) {
+
+	p{color:rgb(0,0,0);}
+	body{background:rgb(244,244,244);}
+	header{ height:130px; background: url(http://localhost:8888/wordpress/images/HeaderBG.jpg);}
+	nav{height: 100%; background:rgb(0,0,0); text-align: center; padding:10px 5px 0px 5px; margin-bottom: 20px;}
+	nav li{display:inline; margin-left: 10px; font-size: 110%; line-height: 160%;}
+	nav li a{color:rgb(255,255,255); text-decoration: none;}
+	article {width:95%; margin-left: 10px;}
+	footer{padding-top: 10px;}
+	footer nav{margin-bottom: 0; padding-bottom: 20px; }
+
+
+
+	#master{width:95%; margin: 0 auto; border: 1px solid rgb(193,180,152); background: rgb(255,255,255);}
+	#slideshow{width:90%; margin:10px auto; }
+	#slideshow img{width:100%; border: 1px solid rgb(193,180,152);}
+	
+	.post{margin-bottom: 20px;}
+	.post h2 {font-weight: bold; font-size: 120%; margin-bottom: 5px;}
+	.post h2 a{color:rgb(189,30,44); text-decoration: none;}
+	.contentbox{background: rgb(200,200,200); float:left; border-top: 1px solid rgb(193,180,152); border-bottom: 1px solid rgb(193,180,152); 
+		margin-bottom: 10px; padding:10px;}
+		.contentbox p { font-family: verdana; font-size: 80%; line-height: 140%; margin-top: 30px;}
+		.contentbox img {float:left; margin-right: 10px;}
+		.meta{font-size: 70%; margin-top: 5px; float:right; font-family: verdana;}
+		.meta a{color:rgb(189,30,44); }
+}
+
+
+/* high resolution, 1024px and above*/
+@media only screen and (min-width: 1024px) {
+
+	p {color:black;}
+	body{ background: rgb(244,244,244);}
+	header{width:960px; height:130px; background: url(http://localhost:8888/wordpress/images/HeaderBG.jpg);}
+	nav{width:960px; height: 35px; background:rgb(0,0,0); text-align: center; padding: 10px 0 0 0; margin-bottom: 20px;}
+	nav li {display:inline; margin-left: 10px; font-size: 105%; line-height:normal; }
+	nav li a{color: rgb(255,255,255); text-decoration: none;}
+	article{width:940px; margin-left: 10px;}
+	footer{padding-top: 10px;}
+	footer nav{margin-bottom: 10px; font-size: 80%; font-family: verdana;}
+
+	#slideshow{width:840px; height:300px; border:1px solid rgb(193,180,152); margin:10px auto;}
+	#master {width:960px; margin: 0 auto; border: 1px solid rgb(193, 200,152); background: rgb(255,255,255);}
+
+	.contentbox{width:300px; background: rgb(200,200,200); float: left; border-top: 1px rgb(193,180,152); border-bottom: 1px solid rgb(193,180,152); 
+		margin-bottom: 10px; padding: 10px;}
+		.contentbox p{font-family: verdana; font-size: 80%; line-height: 140%;}
+		.contentbox img{margin-top: -20px; margin-bottom: 10px;}
+	
+	.post{margin-bottom: 20px;}
+	.post h2{font-weight: bold; font-size: 120%; margin-bottom: 5px;}
+	.post h2 a{text-decoration: none; color:rgb(189,30,44);}
+	.meta {font-size: 70%; margin-top: 5px; float:right; font-family: verdana;}
+	.meta a{color:rgb(189,30,44);}
+}
